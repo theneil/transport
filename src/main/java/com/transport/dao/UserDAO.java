@@ -6,9 +6,6 @@ import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import org.springframework.stereotype.Repository;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
-
 @Repository
 public class UserDAO extends BaseDAO{
 		
@@ -29,20 +26,5 @@ public class UserDAO extends BaseDAO{
 		}
 		return user;
 	}
-	
-	private static final class UserWraper implements RowMapper<User> {
-		
-
-		@Override
-		public User mapRow(ResultSet rs, int i) throws SQLException {
-			User user = new User();
-			user.setEmploycode(rs.getString("employcode"));
-			user.setId(rs.getLong("id"));
-			user.setUsername(rs.getString("username"));
-			user.setPassword(rs.getString("password"));
-			return user;
-		}
-	}
-	
 
 }
