@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="3150606195">
+    <data-source source="LOCAL" name="MySQL - transportservice@localhost" uuid="57bc63d1-b13c-4c24-afb2-2e3740119aaf">
+      <driver-ref>mysql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/transportservice</jdbc-url>
+      <user-name>root</user-name>
+      <user-password>dfc4dfcfdfc3dfc6</user-password>
+      <driver-properties>
+        <property name="zeroDateTimeBehavior" value="convertToNull" />
+        <property name="tinyInt1isBit" value="false" />
+      </driver-properties>
+      <libraries>
+        <library>
+          <url>file://D:/Software/mysql-connector-java-5.0.8/mysql-connector-java-5.0.8-bin.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
+</project>
+
